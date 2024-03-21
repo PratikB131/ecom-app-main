@@ -17,6 +17,8 @@ connectDB();
 
 const app = express();
 
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
 //middleware
 app.use(cors());
 app.use(express.json());
